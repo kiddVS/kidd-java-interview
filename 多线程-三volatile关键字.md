@@ -48,3 +48,7 @@ public void setFlag() {
     flag = true;
 }
 ```
+## synchronized关键字和volatile关键字比较
+* volatile修饰成员变量，synchronized用于方法和代码块。
+* volatile保证多线程访问数据的可见性，不保证操作的原子性（轻量级锁）。synchronized保证多线程访问资源的同步性，既保证可见性又保证原子性。
+* volatile时线程不会阻塞，但是synchronized有可能阻塞。
